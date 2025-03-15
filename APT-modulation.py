@@ -31,13 +31,13 @@ sync_B = [0, 0, 0, 0, 255, 255, 255, 0, 0, 255, 255, 255, 0, 0, 255, 255, 255, 0
 sync_signal_freq_A = 1350
 sync_signal_freq_B = 1550
 carrier_freq = 2400
-T = 0.01  # 同步信号的持续时间为0.02秒
-# The duration of the synchronization signal is 0.02 seconds
+T = 0.01  # 同步信号的持续时间为0.01秒
+# The duration of the synchronization signal is 0.01 seconds
 sample_rate = 44100
 
 # 计算每个样本的持续时间 t
 # Calculate the duration of each sample t
-t = (0.5+0.0605) / (2080 - (T * 2080))
+t = (0.5+0.06) / (2080 - (T * 2080))
 
 # 初始化全局相位
 # Initialize global phases
