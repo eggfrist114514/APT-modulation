@@ -173,37 +173,37 @@ def main():
 
         # Telemetry A
         for i in range(45):
-            if 0<=avhrr<10:
+            if 0<=avhrr<7:
                 audio_processor.write_value(0)
-            elif 10<=avhrr<20:
+            elif 7<=avhrr<14:
                 audio_processor.write_value(57)
-            elif 20<=avhrr<30:
+            elif 14<=avhrr<21:
                 audio_processor.write_value(28)
-            elif 30<=avhrr<40:
+            elif 21<=avhrr<28:
                 audio_processor.write_value(57)
-            elif 40<=avhrr<50:
+            elif 28<=avhrr<35:
                 audio_processor.write_value(85)
-            elif 50<=avhrr<60:
+            elif 35<=avhrr<42:
                 audio_processor.write_value(114)
-            elif 60<=avhrr<70:
+            elif 42<=avhrr<49:
                 audio_processor.write_value(142)
-            elif 70<=avhrr<80:
+            elif 49<=avhrr<56:
                 audio_processor.write_value(171)
-            elif 80<=avhrr<90:
+            elif 56<=avhrr<63:
                 audio_processor.write_value(199)
-            elif 90<=avhrr<100:
+            elif 63<=avhrr<70:
                 audio_processor.write_value(227)
-            elif 100<=avhrr<110:
+            elif 70<=avhrr<77:
                 audio_processor.write_value(255)
-            elif 110<=avhrr<120:
+            elif 77<=avhrr<84:
                 audio_processor.write_value(0)
-            elif 120<=avhrr<160:
+            elif 84<=avhrr<112:
                 audio_processor.write_value(57)
-            elif 160<=avhrr<170:
+            elif 112<=avhrr<119:
                 audio_processor.write_value(0)
             else:
                 audio_processor.write_value(85)
-        if avhrr>=180:
+        if avhrr>=126:
             avhrr=-1
         avhrr+=1
         # Sync B
@@ -248,37 +248,37 @@ def main():
         # Telemetry B
 
         for i in range(45):
-            if 0<=avhrr1<10:
+            if 0<=avhrr1<7:
                 audio_processor.write_value(114)
-            elif 10<=avhrr1<20:
+            elif 7<=avhrr1<14:
                 audio_processor.write_value(57)
-            elif 20<=avhrr1<30:
+            elif 14<=avhrr1<21:
                 audio_processor.write_value(28)
-            elif 30<=avhrr1<40:
+            elif 21<=avhrr1<28:
                 audio_processor.write_value(57)
-            elif 40<=avhrr1<50:
+            elif 28<=avhrr1<35:
                 audio_processor.write_value(85)
-            elif 50<=avhrr1<60:
+            elif 35<=avhrr1<42:
                 audio_processor.write_value(114)
-            elif 60<=avhrr1<70:
+            elif 42<=avhrr1<49:
                 audio_processor.write_value(142)
-            elif 70<=avhrr1<80:
+            elif 49<=avhrr1<56:
                 audio_processor.write_value(171)
-            elif 80<=avhrr1<90:
+            elif 56<=avhrr1<63:
                 audio_processor.write_value(199)
-            elif 90<=avhrr1<100:
+            elif 63<=avhrr1<70:
                 audio_processor.write_value(227)
-            elif 100<=avhrr1<110:
+            elif 70<=avhrr1<77:
                 audio_processor.write_value(255)
-            elif 110<=avhrr1<120:
+            elif 77<=avhrr1<84:
                 audio_processor.write_value(0)
-            elif 120<=avhrr1<160:
+            elif 84<=avhrr1<112:
                 audio_processor.write_value(57)
-            elif 160<=avhrr1<170:
+            elif 112<=avhrr1<119:
                 audio_processor.write_value(114)
             else:
                 audio_processor.write_value(85)
-        if avhrr1>=180:
+        if avhrr1>=126:
             avhrr1=-1
         avhrr1+=1
         if height == 0:
