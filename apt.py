@@ -7,8 +7,7 @@ import sys
 更新日志:更改了同步信号，幅度，减少杂波
 """
 # Utils
-print ("本项目基于apt-encode制作者:硝酸氢二铵
-This project is based on the apt-encode manufacturer: diammonium hydrogen nitrate,使用方法:python xxx.py image1 image2")
+print ("本项目基于apt-encode制作者:硝酸氢二铵【MC_blone fo billbill】\n使用方法:python xxx.py image1 image2")
 def map_value(value, f1, t1, f2, t2):
     return f2 + ((t2 - f2) * (value - f1)) / (t1 - f1)
 
