@@ -92,10 +92,10 @@ class AudioProcessor:
             # Update phase with continuity
             self.phase_carrier = (self.phase_carrier + 2 * math.pi * carrier_freq / sample_rate) % (2 * math.pi)
             samp = math.sin(self.phase_carrier)
-            samp *= map_value(int(value), 0, 255, 0.0, 0.35)
+            samp *= map_value(int(value), 0, 255, 0.0, 1.0)
 
             # Map the sample value from [-1.0, 1.0] to [0, 255]
-            buf = int(map_value(samp, -1.0, 1.0, 0, 155))
+            buf = int(map_value(samp, -1.0, 1.0, 0, 255))
             self.wave_file.writeframes(np.array([buf], dtype=np.uint8).tobytes())
 
 def main():
